@@ -14,7 +14,10 @@
 
 - (id)initWithAddress:(NSString*)urlString;
 - (id)initWithURL:(NSURL*)URL;
+- (void)updateToolbarItems;
 
 @property (nonatomic, readwrite) SVWebViewControllerAvailableActions availableActions;
+@property (nonatomic, strong, readonly) UIBarButtonItem *backBarButtonItem;
+@property (nonatomic, strong) UIActionSheet *pageActionSheet;
 
 @end
